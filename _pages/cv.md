@@ -9,9 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
+Link to full CV [here](https://youtube.com/shorts/NCoI4DXU5TE?feature=share)
+
 Education
 ======
-I go to Princeton University ('23) right now
+I am a senior at Princeton University right now
 
 Publications
 ======
