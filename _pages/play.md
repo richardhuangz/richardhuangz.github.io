@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Play"
+title:
 permalink: /play/
 author_profile: true
 ---
