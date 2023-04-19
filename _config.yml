@@ -9,8 +9,8 @@
 locale                   : "en-US"
 title                    : "Richard Z. Huang"
 title_separator          : "-"
-name                     : &name "Richard Z. Huang"
-description              : &description "This is my website"
+name                     : &name ""
+description              : &description ""
 url                      : https://richardhuangz.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "richardhuangz/richardhuangz.github.io"
@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : 
 facebook:
   username               :
   app_id                 :
@@ -212,15 +212,15 @@ defaults:
   # _teaching
   - scope:
       path: ""
-      type: teaching
+     type: teaching
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
-  # _publications
+   _publications
   - scope:
-      path: ""
+     path: ""
       type: publications
     values:
       layout: single
@@ -237,7 +237,7 @@ defaults:
       share: true
       comment: true
   # _talks
-  - scope:
+   - scope:
       path: ""
       type: talks
     values:
