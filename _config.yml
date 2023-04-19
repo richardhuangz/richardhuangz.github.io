@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Richard"
+  name             : 
   avatar           : "pict71.jpg"
   bio              : 
   location         : 
@@ -212,7 +212,7 @@ defaults:
   # _teaching
   - scope:
       path: ""
-     type: teaching
+      type: teaching
     values:
       layout: single
       author_profile: true
@@ -220,7 +220,7 @@ defaults:
       comments: true
   # _publications
   - scope:
-     path: ""
+      path: ""
       type: publications
     values:
       layout: single
