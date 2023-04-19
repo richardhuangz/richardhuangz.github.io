@@ -11,14 +11,13 @@ redirect_from:
 
 Education
 ======
-I go to school right now
-
+I go to Princeton University ('23) right now
 
 Publications
 ======
-Hehe
+None hehe
 
 Teaching
 ======
-I have
+I have TA'd a bit
   
