@@ -9,7 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
-Link to full CV [here](https://youtube.com/shorts/NCoI4DXU5TE?feature=share)
+Link to full CV  <a href="https://youtube.com/shorts/NCoI4DXU5TE?feature=share" target="_blank">here</a>
+
 
 Education
 ======
