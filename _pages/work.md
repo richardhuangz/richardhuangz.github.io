@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Work"
+title:
 permalink: /work/
 author_profile: true
 ---
