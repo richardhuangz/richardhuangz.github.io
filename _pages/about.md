@@ -1,11 +1,11 @@
 ---
 permalink: /
-title: "Richard's website"
-excerpt: "About me"
+title: ""
+excerpt: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Crazy
+Yeah I use github editor to make this
