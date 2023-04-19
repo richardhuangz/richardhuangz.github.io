@@ -75,6 +75,7 @@
   width: 36px;
   // set width only, for non-square avatars
   height: 36px;
+  border-radius: 50%;
 
   @include breakpoint($large) {
     display: block;
@@ -82,9 +83,8 @@
     height: auto;
   }
 
-  img.square {
+  img {
     max-width: 175px;
-    // max-height: 250px;
     border-radius: 50%;
 
     @include breakpoint($large) {
