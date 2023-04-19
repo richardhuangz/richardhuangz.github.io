@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Richard's website"
+title                    : "Richard Z. Huang"
 title_separator          : "-"
 name                     : &name "Richard Z. Huang"
 description              : &description "This is my website"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Richard"
   avatar           : "pict71.jpg"
-  bio              : "About me"
-  location         : "Where am I"
+  bio              : 
+  location         : 
   employer         :
   pubmed           : 
   googlescholar    : 
