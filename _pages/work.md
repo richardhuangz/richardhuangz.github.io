@@ -11,10 +11,14 @@ Link to full CV  <a href="https://youtube.com/shorts/NCoI4DXU5TE?feature=share" 
 
 Education
 ======
-**more school**
+
+more school
+=
+
 waittt
 
-**Princeton University**
+Princeton University
+=
 Bachelor of Arts in Computer Science
 Certificate in Cognitive Science
 
