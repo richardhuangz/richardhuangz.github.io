@@ -25,7 +25,7 @@ None hehe
 Teaching
 ======
 During undergrad I've worked as a teaching assistant, preceptor, and grader in several courses, listed below:
-- COS 126 (Intro CS) during Spring 2020 to Spring 2023
+- COS 126 (Intro CS) during Spring 2020, Fall 2020, Spring 2021, Fall 2021, Spring 2022, Fall 2022, Spring 2023
 - COS 340 (Discrete Math) during Spring 2021, Fall 2021
 - COS 445 (Economics of Computation) during Spring 2022, Spring 2023
 - COS 451 (Computational Geometry) during Fall 2022
