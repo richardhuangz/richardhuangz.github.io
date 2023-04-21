@@ -11,7 +11,12 @@ Link to full CV  <a href="https://youtube.com/shorts/NCoI4DXU5TE?feature=share" 
 
 Education
 ======
-I am a senior at Princeton University right now
+**more school**
+waittt
+
+**Princeton University**
+Bachelor of Arts in Computer Science
+Certificate in Cognitive Science
 
 Publications
 ======
@@ -19,4 +24,9 @@ None hehe
 
 Teaching
 ======
-I have TA'd a bit
+During undergrad I've worked as a teaching assistant, preceptor, and grader in several courses, listed below:
+- COS 126 (Intro CS) during Spring 2020 to Spring 2023
+- COS 340 (Discrete Math) during Spring 2021, Fall 2021
+- COS 445 (Economics of Computation) during Spring 2022, Spring 2023
+- COS 451 (Computational Geometry) during Fall 2022
+
