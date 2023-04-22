@@ -12,11 +12,11 @@ Link to full CV  <a href="https://youtube.com/shorts/NCoI4DXU5TE?feature=share" 
 Education
 ======
 
-**more school**, 2023 - idk  
-waittt  
+**Brown University**, 2023 - idk  
+PhD in Computer Science  
   
 **Princeton University**, 2019 - 2023    
-Bachelor of Arts in Computer Science  
+Bachelor of Arts in Computer Science,  
 Certificate in Cognitive Science
 
 Publications
