@@ -31,3 +31,11 @@ During undergrad I worked as a teaching assistant, preceptor, and grader in seve
 - COS 445 (Economics of Computation) during Spring 2022, Spring 2023
 - COS 451 (Computational Geometry) during Fall 2022
 
+Other Employment
+======
+- I have cosplayed (interned) as a software engineer at Amazon during Summer 2022, (incoming) Summer 2023
+- I was a LaTeX Instructor for the school's engineering library during Fall 2022
+- I was a program assistant for the Office of the Dean of the College at Princeton during the 2021 - 2022 school year
+- I helped design coding exercises for an intro CS course for Princeton's Pre-Freshman Summer program during Summer 2021
+- I helped design precept curriculum and exercises for COS 126 (Intro CS) during Summer 2020
+
