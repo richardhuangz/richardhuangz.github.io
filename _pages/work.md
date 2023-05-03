@@ -36,6 +36,6 @@ Other Employment
 - I cosplayed (interned) as a software engineer at Amazon during Summer 2022, (incoming) Summer 2023
 - I was a LaTeX instructor for Princeton's engineering library during Fall 2022
 - I was a program assistant for the Office of the Dean of the College at Princeton during the 2021-2022 school year
-- I helped with course development for Princeton's pre-freshman summer program during Summer 2021
-- I helped design precept curriculum for COS 126 during Summer 2020
+- I assisted in course development for Princeton's pre-freshman summer program during Summer 2021
+- I assisted in designing precept curriculum for COS 126 during Summer 2020
 
