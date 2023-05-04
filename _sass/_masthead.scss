@@ -3,7 +3,6 @@
    ========================================================================== */
 
 .masthead {
-  background-color: #483d8b;
   position: relative;
   border-bottom: 1px solid $border-color;
   -webkit-animation: intro 0.3s both;
@@ -17,7 +16,8 @@
     @include clearfix;
     padding: 1em 1em 1em;
     font-family: $sans-serif-narrow;
-
+    background-color: #483d8b;
+     
     @include breakpoint($x-large) {
       max-width: $x-large;
     }
@@ -56,8 +56,4 @@
     padding-right: 2em;
     font-weight: 700;
   }
-}
-
-body {
-   background-color: #483d8b;
 }
