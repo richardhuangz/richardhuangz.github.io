@@ -34,9 +34,9 @@
 
 .masthead__menu {
   background-color: #483d8b;
-  color: #f0fff0;
 
   ul {
+    color: #f0fff0;
     margin: 0;
     padding: 0;
     clear: both;
@@ -46,13 +46,13 @@
 
 .masthead__menu-item {
   background-color: #483d8b;
-  color: #f0fff0;
   
   display: block;
   list-style-type: none;
   white-space: nowrap;
 
   &--lg {
+    color: #f0fff0;
     padding-right: 2em;
     font-weight: 700;
   }
