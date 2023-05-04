@@ -10,6 +10,10 @@
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
   z-index: 20;
+   
+  body {
+    background-color: #483d8b;
+  }
 
   &__inner-wrap {
     @include container;
@@ -29,10 +33,6 @@
       text-decoration: none;
     }
   }
-}
-
-body {
-   background-color: #483d8b;
 }
 
 .masthead__menu {
