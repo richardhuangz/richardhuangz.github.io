@@ -10,16 +10,7 @@
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
   z-index: 20;
-  background-color: #483d8b;
-  
-  body {
-    background-color: #483d8b;
-  }
-  
-  header {
-    background-color: #483d8b;
-  }
-
+ 
   &__inner-wrap {
     @include container;
     @include clearfix;
@@ -41,6 +32,7 @@
 }
 
 .masthead__menu {
+  background-color: #483d8b;
 
   ul {
     margin: 0;
@@ -51,6 +43,8 @@
 }
 
 .masthead__menu-item {
+  background-color: #483d8b;
+  
   display: block;
   list-style-type: none;
   white-space: nowrap;
