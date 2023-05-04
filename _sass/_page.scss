@@ -16,15 +16,16 @@
   }
 }
 
+body {
+     background-color: 0,0,0;
+     color: 255,255,255;
+}
+
 .page {
   @include breakpoint($large) {
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
     @include suffix(2 of 12);
-  }
-  body {
-     background-color: gray;
-     color: white;
   }
   
    
