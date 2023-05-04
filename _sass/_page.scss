@@ -24,9 +24,9 @@
   }
    
    body {
-  background-color: navy;
-  color: ghostwhite;
-}
+      background-color: navy;
+      color: ghostwhite;
+   }
 
   .page__inner-wrap {
     @include full();
