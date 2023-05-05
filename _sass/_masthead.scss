@@ -28,6 +28,7 @@
 
     a {
       text-decoration: none;
+      color: #f0fff0;
     }
   }
 }
@@ -35,11 +36,14 @@
 .masthead__menu {
 
   ul {
-    color: #f0fff0;
     margin: 0;
     padding: 0;
     clear: both;
     list-style-type: none;
+  }
+   
+  a {
+    color: #f0fff0;
   }
 }
 
@@ -50,6 +54,9 @@
   list-style-type: none;
   white-space: nowrap;
 
+  a {
+    color: #f0fff0;
+  }
   &--lg {
     background-color: #483d8b;
     padding-right: 2em;
