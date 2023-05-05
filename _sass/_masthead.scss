@@ -27,8 +27,9 @@
 
     a {
       text-decoration: none;
-      color: #f0fff0;
     }
+     
+    color: #f0fff0;
   }
 }
 
@@ -52,7 +53,6 @@
   white-space: nowrap;
   
   &--lg {
-    // background-color: #483d8b;
     padding-right: 2em;
     font-weight: 700;
   }
