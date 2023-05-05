@@ -16,6 +16,7 @@
     @include clearfix;
     padding: 1em 1em 1em;
     font-family: $sans-serif-narrow;
+    color: #f0fff0;
      
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -28,8 +29,6 @@
     a {
       text-decoration: none;
     }
-     
-    color: #f0fff0;
   }
 }
 
