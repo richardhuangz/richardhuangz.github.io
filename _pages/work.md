@@ -33,7 +33,7 @@ During undergrad I worked as a teaching assistant, preceptor, and grader in seve
 
 Other stuff I got paid for
 ======
-- I cosplayed (interned) as a software engineer at Amazon during Summer 2022, (incoming) Summer 2023
+- I interned as a software engineer at Amazon during Summer 2022, (incoming) Summer 2023
 - I was a LaTeX instructor for Princeton's engineering library during Fall 2022
 - I was a program assistant at the Office of the Dean of the College at Princeton during the 2021-2022 school year
 - I assisted in course development for Princeton's pre-freshman summer program during Summer 2021
