@@ -10,33 +10,26 @@
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
   z-index: 20;
-   
-  // background-color: #483d8b;
- 
+    
   &__inner-wrap {
     @include container;
     @include clearfix;
     padding: 1em 1em 1em;
     font-family: $sans-serif-narrow;
-    
-    // background-color: #483d8b;
-     
+         
     @include breakpoint($x-large) {
       max-width: $x-large;
        
-      // background-color: #483d8b;
     }
 
     nav {
       z-index: 10;
       
-      // background-color: #483d8b;
+      background-color: #483d8b;
     }
 
     a {
       text-decoration: none;
-      
-      background-color: #483d8b;
     }
   }
 }
@@ -50,7 +43,6 @@
     clear: both;
     list-style-type: none;
     
-    background-color: #483d8b;
   }
   
 }
@@ -66,6 +58,5 @@
     padding-right: 2em;
     font-weight: 700;
      
-    background-color: #483d8b;
   }
 }
