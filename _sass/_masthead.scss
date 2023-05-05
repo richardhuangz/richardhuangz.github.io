@@ -44,14 +44,14 @@
 }
 
 .masthead__menu-item {
-  /*background-color: #483d8b;*/
+  background-color: #483d8b;
   
   display: block;
   list-style-type: none;
   white-space: nowrap;
   
   &--lg {
-    background-color: #483d8b;
+    /*background-color: #483d8b;*/
     padding-right: 2em;
     font-weight: 700;
   }
