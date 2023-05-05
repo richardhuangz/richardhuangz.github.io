@@ -10,49 +10,53 @@
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
   z-index: 20;
-  color: #f0fff0;
+   
+  background-color: #483d8b;
  
   &__inner-wrap {
     @include container;
     @include clearfix;
     padding: 1em 1em 1em;
     font-family: $sans-serif-narrow;
-    color: #f0fff0;
+    
+    background-color: #483d8b;
      
     @include breakpoint($x-large) {
       max-width: $x-large;
-      color: #f0fff0;
+       
+      background-color: #483d8b;
     }
 
     nav {
       z-index: 10;
-      color: #f0fff0;
+      
+      background-color: #483d8b;
     }
 
     a {
       text-decoration: none;
-      color: #f0fff0;
+      
+      background-color: #483d8b;
     }
   }
 }
 
 .masthead__menu {
   background-color: #483d8b;
-  color: #f0fff0;
 
   ul {
     margin: 0;
     padding: 0;
     clear: both;
     list-style-type: none;
-    color: #f0fff0;
+    
+    background-color: #483d8b;
   }
   
 }
 
 .masthead__menu-item {
   background-color: #483d8b;
-  color: #f0fff0;
   
   display: block;
   list-style-type: none;
@@ -61,6 +65,7 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
-    color: #f0fff0;
+     
+    background-color: #483d8b;
   }
 }
