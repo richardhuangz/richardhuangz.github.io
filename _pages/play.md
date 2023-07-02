@@ -7,4 +7,4 @@ author_profile: true
 
 {% include base_path %}
 
-see youtube
+no play allowed
