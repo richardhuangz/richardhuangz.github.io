@@ -21,7 +21,7 @@ Certificate in Cognitive Science
 
 Publications
 ======
-None hehe
+None sheesh
 
 Teaching
 ======
