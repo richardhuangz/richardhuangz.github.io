@@ -8,4 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-I'm a PhD student in the computer science department at Brown University. Before that, I graduated from Princeton University, where I was advised by Matt Weinberg and Mark Braverman. My research interests in approximation and graph algorithms.
+I'm a PhD student in the computer science department at Brown University. Before that, I graduated from Princeton University, where I was advised by Matt Weinberg and Mark Braverman. My research interests are in approximation and graph algorithms.
