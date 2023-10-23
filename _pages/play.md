@@ -7,6 +7,8 @@ author_profile: true
 
 {% include base_path %}
 
+I put the middle initial because it looks cool
+
 Me playing <a href="https://youtu.be/o2XMmue8JhU?feature=shared" target="_blank">oboe</a>
 
 I post <a href="https://youtu.be/8rd2_BLHqCI?feature=shared" target="_blank">music</a> on the <a href="https://youtu.be/zJn4pnsXwQs?feature=shared" target="_blank">internet</a> when I have <a href="https://youtu.be/1wYpUhXfWZY?feature=shared" target="_blank">time</a>
