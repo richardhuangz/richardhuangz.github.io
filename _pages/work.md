@@ -6,13 +6,10 @@ author_profile: true
 ---
 {% include base_path %}
 
-# Link to full CV  <a href="https://youtube.com/shorts/NCoI4DXU5TE?feature=share" target="_blank">here</a>
-
-
 Education
 ======
 
-**Brown University**, Fall 2023 - present  
+**Brown University**, Fall 2023 - Present  
 PhD in Computer Science  
   
 **Princeton University**, Fall 2019 - Spring 2023    
@@ -21,7 +18,7 @@ Certificate in Cognitive Science
 
 Publications
 ======
-Oh no
+:D
 
 Teaching
 ======
