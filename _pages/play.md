@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-Me playing <a href="[http://example.com/](https://youtu.be/o2XMmue8JhU?feature=shared)" target="_blank">oboe</a>
+Me playing <a href="https://youtu.be/o2XMmue8JhU?feature=shared" target="_blank">oboe</a>
 
 I post <a href="https://youtu.be/8rd2_BLHqCI?feature=shared" target="_blank">music</a> on <a href="https://youtu.be/zJn4pnsXwQs?feature=shared" target="_blank">YouTube</a> when I have time
 
