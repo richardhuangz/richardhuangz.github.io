@@ -9,10 +9,10 @@ author_profile: true
 Education
 ======
 
-**Brown University**, Fall 2023 - Present  
+**Brown University**, 2023 - Present  
 PhD in Computer Science  
   
-**Princeton University**, Fall 2019 - Spring 2023    
+**Princeton University**, 2019 - 2023    
 Bachelor of Arts in Computer Science  
 Certificate in Cognitive Science
 
