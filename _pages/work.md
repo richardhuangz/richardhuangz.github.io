@@ -14,7 +14,7 @@ PhD in Computer Science
   
 *Princeton University*, 2019 - 2023    
 Bachelor of Arts in Computer Science  
-Certificate in Cognitive Science
+Minor in Cognitive Science
 
 Publications
 ------
