@@ -16,7 +16,7 @@ PhD in Computer Science
 Bachelor of Arts in Computer Science  
 Minor in Cognitive Science
 
-Publications
+Papers
 ------
 :D
 
