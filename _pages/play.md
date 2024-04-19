@@ -5,6 +5,7 @@ permalink: /play/
 author_profile: true
 ---
 
+{% include base_path %}
 
 I put the middle initial because it looks cool
 
