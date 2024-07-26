@@ -36,24 +36,23 @@
             width: 100%;
         }
 	.header-container {
+		display: flex;
+            flex-direction: column;
+            align-items: center;
    		width: 500px;
     		background-color: var(--bg-color-light);
 		padding-top: 50px;
  		padding-right: 0px;
   		padding-bottom: 50px;
-		padding-left: 100px;
+		padding-left: 50px;
 
 }
         .header-container img {
-            border-radius: 50px;
-            width: 200px;
+            border-radius: 100px;
+            width: 250px;
             height: 250px;
             object-fit: contain;
             margin-bottom: 20px;
-		@include breakpoint($large) {
-      			padding: 5px;
-      			border: 1px solid $border-color;
-    		}
 		-webkit-user-drag: none;
             -moz-user-drag: none;
             -o-user-drag: none;
@@ -208,7 +207,7 @@
     </div>
     <div class="container">
         <div class="header-container">
-            <img src="grad1.jpg" alt="Your Headshot" oncontextmenu="return false;" draggable="false">
+            <img src="grad2.jpg" alt="Your Headshot" oncontextmenu="return false;" draggable="false">
             <h1 styld>Richard Z Huang</h1>
         </div>
         <div class="content">
