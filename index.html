@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richard Z Huang</title>
+
     <style>
         :root {
-            --bg-color-light: #FAF9F6;
+            --bg-color-light: #fffda8;
             --text-color-light: #301934;
             --bg-color-dark: #28282B;
             --text-color-dark: #FAF9F6;
             --link-color: #007BFF;
             --link-hover-color: #0056b3;
         }
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -24,36 +26,33 @@
             display: flex;
             height: 100vh;
         }
-	a:link {
-  		color: #209AFF;
-	}
 
-	a:visited {
-  		color: #209AFF;
-	}
+        a:link,
+        a:visited {
+            color: #209AFF;
+        }
+
         .container {
             display: flex;
             width: 100%;
         }
-	.header-container {
-		display: flex;
+
+        .header-container {
+            display: flex;
             flex-direction: column;
             align-items: center;
-   		width: 500px;
-    		background-color: var(--bg-color-light);
-		padding-top: 50px;
- 		padding-right: 0px;
-  		padding-bottom: 50px;
-		padding-left: 50px;
+            width: 250px;
+            background-color: var(--bg-color-light);
+            padding: 50px 0 50px 25px;
+        }
 
-}
         .header-container img {
             border-radius: 100px;
             width: 250px;
             height: 250px;
             object-fit: contain;
             margin-bottom: 25px;
-		-webkit-user-drag: none;
+            -webkit-user-drag: none;
             -moz-user-drag: none;
             -o-user-drag: none;
             user-drag: none;
@@ -63,61 +62,67 @@
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+        }
 
+        .header-container h1,
+        .header-container p {
+            margin: 0 0 10px 0;
         }
-        .header-container h1, .header-container p {
-            margin: 0;
-            margin-bottom: 10px;
-        }
+
         .content {
             flex-grow: 1;
-            padding-top: 95px;
- 	    padding-right: 225px;
-  	    padding-bottom: 1500px;
-	    padding-left: 75px;
+            padding: 120px 100px 500px 50px;
         }
-	h1 {
-  		font-size: 24px;
-	}
+
+        h1 {
+            font-size: 24px;
+        }
+
         h2 {
             border-bottom: 2px solid var(--link-color);
             padding-bottom: 5px;
         }
-	h3 {
+
+        h3 {
             border-bottom: 2px solid var(--link-color);
             padding-bottom: 5px;
             display: inline-block;
         }
+
         .paper {
             margin-bottom: 15px;
         }
+
         .paper-title {
             font-weight: bold;
         }
-        .paper-authors {
-            
+
+        .paper-info {
+            color: #E30B5C;
         }
-	.paper-info {
-		color: #E30B5C
-	}
-	.paper-abstract {
-		font-size: 12px
-	}	
+
+        .paper-abstract {
+            font-size: 12px;
+        }
+
         footer {
             text-align: center;
             margin-top: 50px;
             font-size: 0.9em;
             color: #555;
         }
+
         .toggle-container {
             position: absolute;
             top: 10px;
             right: 10px;
         }
+
         .checkbox {
             opacity: 0;
             position: absolute;
         }
+
         .checkbox-label {
             display: flex;
             align-items: center;
@@ -130,12 +135,15 @@
             cursor: pointer;
             padding: 5px;
         }
+
         .fa-moon {
             color: #f1c40f;
         }
+
         .fa-sun {
             color: #f39c12;
         }
+
         .ball {
             background: #fff;
             border-radius: 50%;
@@ -146,56 +154,88 @@
             width: 19px;
             transition: transform 0.2s linear;
         }
+
         .checkbox:checked + .checkbox-label .ball {
             transform: translateX(20px);
         }
-        .dark-mode .header-container {
-            background-color: var(--bg-color-dark);
-        }
+
         .dark-mode {
             background-color: var(--bg-color-dark);
             color: var(--text-color-dark);
         }
-	 .hover-container {
-            position: relative;
+
+        .dark-mode .header-container {
+            background-color: var(--bg-color-dark);
+        }
+
+        .paper-deliverables {
             display: inline-block;
-		color: #209AFF;
+            position: relative;
         }
 
-        .hover-container .hover-text {
-            visibility: hidden;
-            width: 300px;
-            background-color: #555;
-            color: #fff;
-            border-radius: 5px;
-            padding: 5px;
-            position: absolute;
-            z-index: 1;
-            bottom: 125%; /* Position above the text */
-            left: 50%;
-            margin-left: -150px; /* Center the tooltip */
-            opacity: 0;
-            transition: opacity 0.3s;
+        .deliverables-line {
+            white-space: nowrap;
         }
 
-        .hover-container .hover-text::after {
-            content: '';
-            position: absolute;
-            top: 100%; /* At the bottom of the tooltip */
-            left: 50%;
-            margin-left: -5px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: #555 transparent transparent transparent;
+        .summary-toggle {
+            text-decoration: underline;
+            cursor: pointer;
+            color: #209AFF;
         }
 
-        .hover-container:hover .hover-text {
-            visibility: visible;
-            opacity: 1;
+        .summary-text {
+            display: none;
+            margin-top: 6px;
+            color: #E30B5C;
+        }
+
+        /* ---------- MOBILE ---------- */
+        @media (max-width: 768px) {
+            body {
+                height: auto;
+                display: block;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .header-container {
+                width: 100%;
+                padding: 30px 20px;
+            }
+
+            .header-container img {
+                width: 160px;
+                height: 160px;
+                margin-bottom: 15px;
+            }
+
+            .content {
+                padding: 20px;
+                padding-bottom: 100px;
+            }
+
+            h1 {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            h2,
+            h3 {
+                font-size: 18px;
+            }
+
+            .paper-abstract {
+                font-size: 13px;
+            }
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <div class="toggle-container">
         <input type="checkbox" class="checkbox" id="checkbox">
@@ -205,118 +245,182 @@
             <span class="ball"></span>
         </label>
     </div>
+
     <div class="container">
         <div class="header-container">
-            <img src="grad2.jpg" alt="Your Headshot" oncontextmenu="return false;" draggable="false">
-            <h1 styld>Richard Z Huang</h1>
+            <img src="baheli.jpg" alt="Your Headshot" oncontextmenu="return false;" draggable="false">
+            <h1>Richard Z Huang</h1>
         </div>
+
         <div class="content">
             <section id="about">
                 <p>
+                    I'm a PhD student at Brown University, where I'm advised by
+                    <a href="https://dhershko.github.io/" target="_blank">Ellis Hershkowitz</a>.
+                    Earlier, I did my undergrad at Princeton University.
 
-		I'm a PhD student in the computer science department at Brown University, where I'm advised by <a href="https://dhershko.github.io/" target="_blank">Ellis Hershkowitz</a>. Before that, I graduated from Princeton University, where I was advised by <a href="https://www.cs.princeton.edu/~smattw/" target="_blank">Matt Weinberg</a> and <a href="https://mbraverm.princeton.edu/" target="_blank">Mark Braverman</a>. 
+                    <br><br>
 
-<br><br>
+                    I work on stuff in theoretical computer science, mainly in combinatorial
+                    optimization and approximation algorithms.
 
-		I work on stuff like combinatorial optimization and algorithms under incentives + uncertainty.
+                    <br><br>
 
-<br><br>
-
-		Contact: rzh @ brown.edu
-
-
-
-</p>
-<br>
+                    Contact: rzh @ brown.edu
+                </p>
+                <br>
             </section>
 
             <section id="work">
                 <h2>Work</h2>
 
+                <h3>Papers</h3>
 
-		<h3>Papers</h3>
+                <div class="paper">
+                    <div class="paper-title">Planar Length-Constrained Minimum Spanning Trees</div>
+                    <div class="paper-authors">With Ellis Hershkowitz</div>
+                    <div class="paper-info">STOC 2026</div>
 
-		<div class="paper">
+                    <div class="paper-deliverables">
+                        <div class="deliverables-line">
+                            <a href="https://arxiv.org/abs/2510.09002" target="_blank">arXiv</a>,
+                            <span class="summary-toggle">Summary</span>
+                        </div>
+                        <div class="summary-text">
+					There was this one night shortly before the deadline where I edited the overleaf at 4am and went to bed and then Ellis woke up and started editing it at 4:30am
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paper">
                     <div class="paper-title">Simple Length-Constrained Minimum Spanning Trees</div>
                     <div class="paper-authors">With Ellis Hershkowitz</div>
                     <div class="paper-info">SOSA 2025</div>
-			 <div class="paper-deliverables"> [<a href="https://arxiv.org/abs/2410.08170" target="_blank">arXiv</a>, <a href="sosa25_ppt.pdf" target="_blank">Slides</a>, <div class="hover-container">
-        <span>Summary</span>
-        <div class="hover-text">A cute randomized algorithm gets a 1/\epsilon diameter apx and n^\epsilon/\epsilon cost apx in this bicriteria MST problem</div>
-    </div>] </div> 
-           </div>
 
-		<div class="paper">
+                    <div class="paper-deliverables">
+                        <div class="deliverables-line">
+                            <a href="https://arxiv.org/abs/2410.08170" target="_blank">arXiv</a>,
+                            <a href="sosa25_ppt.pdf" target="_blank">Slides</a>,
+                            <span class="summary-toggle">Summary</span>
+                        </div>
+                        <div class="summary-text">
+                            The algorithm uniformly samples vertices and then does something
+                            kinda greedy to match current best upper bounds for this bicriteria
+                            spanning tree problem
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paper">
                     <div class="paper-title">Prophet Inequality of Partition Matroid Intersection</div>
                     <div class="paper-authors">Advised by Matt Weinberg</div>
                     <div class="paper-info">Undergrad senior thesis, 2023</div>
-		    	 <div class="paper-deliverables"> [<a href="https://dataspace.princeton.edu/handle/88435/dsp01zk51vm053" target="_blank">Princeton DataSpace</a>, <div class="hover-container">
-        <span>Summary</span>
-        <div class="hover-text">I did not close the gap between the root d lower bound and d upper bound for the prophet inequality constrained to an intersection of d partition matroids</div>
-    </div>] </div>
+
+                    <div class="paper-deliverables">
+                        <div class="deliverables-line">
+                            <a href="https://dataspace.princeton.edu/handle/88435/dsp01zk51vm053"
+                                target="_blank">Princeton DataSpace</a>,
+                            <span class="summary-toggle">Summary</span>
+                        </div>
+                        <div class="summary-text">
+                            I did not close the gap between the root d lower bound and d upper
+                            bound for the prophet inequality constrained to an intersection of
+                            d partition matroids
+                        </div>
+                    </div>
                 </div>
+
                 <div class="paper">
                     <div class="paper-title">On Multidimensional Stable Matching</div>
                     <div class="paper-authors">Advised by Mark Braverman</div>
                     <div class="paper-info">Undergrad junior paper, 2022</div>
-			<div class="paper-deliverables"> [<div class="hover-container">
-        <span>Summary</span>
-        <div class="hover-text">The expected number of solutions for a random instance of k dimensional stable matching with complete preferences and n agents for each of the k parties is polynomial on n</div>
-    </div>]</div>
+
+                    <div class="paper-deliverables">
+                        <div class="deliverables-line">
+                            <span class="summary-toggle">Summary</span>
+                        </div>
+                        <div class="summary-text">
+                            The expected number of solutions for a random instance of k dimensional
+                            stable matching with complete preferences and n agents for each of the
+                            k parties is polynomial on n
+                        </div>
+                    </div>
                 </div>
-		
 
-		<h3>Teaching</h3>
-		<div> At Brown:
-		<ul>
-			<li> CSCI 2952T (Algorithms Toolkit) during Fall 2024
-		</ul>
-		
+                <h3>Teaching</h3>
 
-		At Princeton:
-		<ul>
-			<li>COS 126 (Intro CS) during Spring 2020, Fall 2020, Spring 2021, Fall 2021, Spring 2022, Fall 2022, Spring 2023 </li>
-			<li>COS 340 (Discrete Math) during Spring 2021, Fall 2021 </li>
-			<li>COS 445 (Economics of Computation) during Spring 2022, Spring 2023 </li>
-			<li>COS 451 (Computational Geometry) during Fall 2022 </li>
+                <div>
+                    At Brown:
+                    <ul>
+                        <li>CSCI 2952T (Algorithms Toolkit): Fall 2024</li>
+                    </ul>
 
-		</ul>
-		</div>
-                
+                    At Princeton:
+                    <ul>
+                        <li>COS 126 (Intro CS): Spring 2020, Fall 2020, Spring 2021, Fall 2021, Spring 2022, Fall 2022, Spring 2023</li>
+                        <li>COS 340 (Discrete Math): Spring 2021, Fall 2021</li>
+                        <li>COS 445 (Economics of Computation): Spring 2022, Spring 2023</li>
+                        <li>COS 451 (Computational Geometry): Fall 2022</li>
+                    </ul>
+                </div>
             </section>
 
             <section id="play">
                 <h2>Play</h2>
                 <p>
-		I put the middle initial because it looks cool 
-		<br><br>
+                    Me playing <a href="https://youtu.be/o2XMmue8JhU?feature=shared" target="_blank">oboe</a>
+                    <br><br>
 
-		Me playing <a href="https://youtu.be/o2XMmue8JhU?feature=shared" target="_blank">oboe</a> 
-		<br><br>
+                    I post <a href="https://youtu.be/zJn4pnsXwQs?feature=shared" target="_blank">music</a>
+                    on the internet when I have time
+				<br><br>
 
-		I post <a href="https://youtu.be/zJn4pnsXwQs?feature=shared" target="_blank">music</a> on the internet when I have time 
-		<br><br>
-
-		I also <a href="https://flat.io/score/639cb0c4d6f1ff777d1a59f5-shou-xie-de-cong-qian-jay?sharingKey=9475d751767ec2bc45c7fd007e3d3e86b2ab9e96521f6af035c7c0e639f75c124fe0b154c8c6d7679ae2342d83962e3553447f870ce14fb74d6325403bb1b5bc" target="_blank">write</a> some <a href="https://flat.io/score/649af3ef86c84b8c86396a6d-ru-hai?sharingKey=d183d7ba07ad030817bc1dae4489747cde169a0039d7615904cd0d34f3ac9c97ef3eb4132e6231eb4f8567fabc9452ed50a3002bf0610cc47a285eca991ce8f0" target="_blank">arrangements</a> for my friends and I to <a href="https://flat.io/score/64a8dc11ec73743893f57a3b-attitude-by-mrs-green-apple?sharingKey=94668e0c41811690f3acb0194b60d4e76d56e812945cb5dd6454fdd08624c8ab4ad72c6f4133f7d234e3077511a50beb284ff42c5ecdee6df4a1914c710a6579" target="_blank">play</a> together when I have a <a href="https://flat.io/score/64aa7cc627b7728cb20c47d3-unlucky-by-iu?sharingKey=ab74e859b755d6a990e862d84646d9ebe4ed69f898e4c55e420c5d9d1797cd324337fc9960440eeb07bc4c9b28d556556cf9c043ee30ab2cff19a1f03d48d4c2" target="_blank">lot</a> of time 
-		<br><br>
-
-		We performed this one at <a href="https://youtu.be/b2MyCJyoJS4?feature=shared&t=3410" target="_blank">Jeremy's senior recital</a>
-		<br><br>
-
-		I enjoyed spending time on creative projects in my college classes like <a href="https://www.youtube.com/watch?v=kOq1nCt4PU0" target="_blank">this</a> and <a href="https://www.youtube.com/watch?v=eO3uvkmKKnI" target="_blank" >this</a>
-		<br><br>
-
-		A pic of the <a href="fireflies.JPEG" target="_blank">back of my head</a> (in the bottom left) when I was in ppe
+				I also write down things for my friends and I to play together when I have a lot of time [<a href="https://flat.io/score/639cb0c4d6f1ff777d1a59f5-shou-xie-de-cong-qian-jay?sharingKey=9475d751767ec2bc45c7fd007e3d3e86b2ab9e96521f6af035c7c0e639f75c124fe0b154c8c6d7679ae2342d83962e3553447f870ce14fb74d6325403bb1b5bc" target="_blank">1</a>, <a href="https://flat.io/score/649af3ef86c84b8c86396a6d-ru-hai?sharingKey=d183d7ba07ad030817bc1dae4489747cde169a0039d7615904cd0d34f3ac9c97ef3eb4132e6231eb4f8567fabc9452ed50a3002bf0610cc47a285eca991ce8f0" target="_blank">2</a>, <a href="https://flat.io/score/64a8dc11ec73743893f57a3b-attitude-by-mrs-green-apple?sharingKey=94668e0c41811690f3acb0194b60d4e76d56e812945cb5dd6454fdd08624c8ab4ad72c6f4133f7d234e3077511a50beb284ff42c5ecdee6df4a1914c710a6579" target="_blank">3</a>, <a href="https://flat.io/score/64aa7cc627b7728cb20c47d3-unlucky-by-iu?sharingKey=ab74e859b755d6a990e862d84646d9ebe4ed69f898e4c55e420c5d9d1797cd324337fc9960440eeb07bc4c9b28d556556cf9c043ee30ab2cff19a1f03d48d4c2" target="_blank">4</a>, <a href="https://flat.io/score/6913afa11b82e1c3b9f9944d-gei-bao-zhao-he-zi-de-gu-niang?sharingKey=fe454bee6521fdd873eb9433af1a98e358795f83427662e7debbaef786146819c710c5666a2053e465ac12a567e588b311d08ff1741a41ea4b2b47f15e94663b" target="_blank">5</a>]
+				<br><br> 
+				
+				We performed this one at <a href="https://youtu.be/b2MyCJyoJS4?feature=shared&t=3410" target="_blank">Jeremy's senior recital</a> 
+				<br><br> 
 		
-		<br><br>
-		</p>
+				I enjoyed spending time on creative projects in my college classes like <a href="https://www.youtube.com/watch?v=kOq1nCt4PU0" target="_blank">this</a> and <a href="https://www.youtube.com/watch?v=eO3uvkmKKnI" target="_blank" >this</a> 
+				<br><br>
+	
+				A pic of the <a href="fireflies.JPEG" target="_blank">back of my head</a> (in the bottom left) when I was in ppe 
+				<br><br> 
+
+				<!--<a href="" target="_blank">Pulling</a> and <a href="zt-pb.png" target="_blank">zetamac-ing</a> >my bodyweight 
+				<br><br>-->
+				
+				<br>
+                </p>
+
             </section>
         </div>
     </div>
 
+    <!-- toggle dark mode -->
     <script>
-        document.getElementById('checkbox').addEventListener('change', function() {
+        document.getElementById('checkbox').addEventListener('change', function () {
             document.body.classList.toggle('dark-mode');
         });
     </script>
+
+    <!-- reset ball upon refresh -->
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('checkbox').checked = false;
+        });
+    </script>
+
+    <!-- toggle summary -->
+    <script>
+        document.querySelectorAll('.summary-toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const summary = toggle.closest('.paper-deliverables')
+                    .querySelector('.summary-text');
+                summary.style.display =
+                    summary.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
 </body>
+</html>
