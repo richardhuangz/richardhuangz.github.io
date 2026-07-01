@@ -7,7 +7,7 @@
 
     <style>
         :root {
-            --bg-color-light: #fffda8;
+            --bg-color-light: #FFFDA8;
             --text-color-light: #301934;
             --bg-color-dark: #28282B;
             --text-color-dark: #FAF9F6;
@@ -98,7 +98,7 @@
         }
 
         .paper-info {
-            color: #E30B5C;
+            color: #FF0F6A;
         }
 
         .paper-abstract {
@@ -178,16 +178,20 @@
         }
 
         .summary-toggle {
-            text-decoration: underline;
+            color: #33A1FF !important;
             cursor: pointer;
-            color: #209AFF;
         }
 
         .summary-text {
             display: none;
             margin-top: 6px;
-            color: #E30B5C;
+            color: #FF0F6A;
         }
+       
+        a {
+		color: #33A1FF !important;
+   		text-decoration-line: none;
+	  }
 
         /* ---------- MOBILE ---------- */
         @media (max-width: 768px) {
@@ -248,7 +252,7 @@
 
     <div class="container">
         <div class="header-container">
-            <img src="baheli.jpg" alt="Your Headshot" oncontextmenu="return false;" draggable="false">
+            <img src="donghu.jpg" alt="Your Headshot" oncontextmenu="return false;" draggable="false">
             <h1>Richard Z Huang</h1>
         </div>
 
@@ -273,9 +277,25 @@
 
             <section id="work">
                 <h2>Work</h2>
-
                 <h3>Papers</h3>
+			
 
+		    <div class="paper">
+                    <div class="paper-title">Improved Parallel Algorithms for EF1 Allocations</div>
+                    <div class="paper-authors">With Kishen Gowda, Ellis Hershkowitz, and Greg Kehne</div>
+                    <div class="paper-info"></div>
+
+                    <div class="paper-deliverables">
+                        <div class="deliverables-line">
+                            <a href="https://arxiv.org/abs/2605.16791" target="_blank">arXiv</a>,
+                            <span class="summary-toggle">Summary</span>
+                        </div>
+                        <div class="summary-text">
+				  	NC algorithms when the number of agents is small and large, and other results
+                        </div>
+                    </div>
+                </div>
+		    
                 <div class="paper">
                     <div class="paper-title">Planar Length-Constrained Minimum Spanning Trees</div>
                     <div class="paper-authors">With Ellis Hershkowitz</div>
@@ -284,14 +304,15 @@
                     <div class="paper-deliverables">
                         <div class="deliverables-line">
                             <a href="https://arxiv.org/abs/2510.09002" target="_blank">arXiv</a>,
+				     <a href="stoc2026-slides.pdf" target="_blank">Slides</a>,
                             <span class="summary-toggle">Summary</span>
                         </div>
                         <div class="summary-text">
-							We wanted to show that this problem is easier to approximate in 
-							planar graphs and started by defining length-constrained 
-							separators which wasn't enough so we also defined 
-							length-constrained divisions                
-						</div>
+					We wanted to show that this problem is easier to approximate 
+					in planar graphs and started by defining length-constrained 
+					separators which wasn't enough so we also defined 
+					length-constrained divisions               
+			   	  </div>
                     </div>
                 </div>
 
@@ -303,13 +324,12 @@
                     <div class="paper-deliverables">
                         <div class="deliverables-line">
                             <a href="https://arxiv.org/abs/2410.08170" target="_blank">arXiv</a>,
-                            <a href="sosa25_ppt.pdf" target="_blank">Slides</a>,
+                            <a href="sosa2025-slides.pdf" target="_blank">Slides</a>,
                             <span class="summary-toggle">Summary</span>
                         </div>
                         <div class="summary-text">
-                            The algorithm uniformly samples vertices and then does something
-                            kinda greedy to match current best upper bounds for this bicriteria
-                            spanning tree problem
+                            The algorithm uniformly randomly samples vertices and then does something
+                            kinda greedy to match current best upper bounds
                         </div>
                     </div>
                 </div>
@@ -326,9 +346,8 @@
                             <span class="summary-toggle">Summary</span>
                         </div>
                         <div class="summary-text">
-                            I did not close the gap between the root d lower bound and d upper
-                            bound for the prophet inequality constrained to an intersection of
-                            d partition matroids
+                            I did not close the gap between the root d and d lower/upper
+                            bounds for the d partition matroids intersection prophet inequality
                         </div>
                     </div>
                 </div>
@@ -362,10 +381,11 @@
                     <ul>
                         <li>COS 126 (Intro CS): Spring 2020, Fall 2020, Spring 2021, Fall 2021, Spring 2022, Fall 2022, Spring 2023</li>
                         <li>COS 340 (Discrete Math): Spring 2021, Fall 2021</li>
-                        <li>COS 445 (Economics of Computation): Spring 2022, Spring 2023</li>
+                        <li>COS 445 (Economics and Computation): Spring 2022, Spring 2023</li>
                         <li>COS 451 (Computational Geometry): Fall 2022</li>
                     </ul>
                 </div>
+			
             </section>
 
             <section id="play">
@@ -381,17 +401,18 @@
 				I also write down things for my friends and I to play together when I have a lot of time [<a href="https://flat.io/score/639cb0c4d6f1ff777d1a59f5-shou-xie-de-cong-qian-jay?sharingKey=9475d751767ec2bc45c7fd007e3d3e86b2ab9e96521f6af035c7c0e639f75c124fe0b154c8c6d7679ae2342d83962e3553447f870ce14fb74d6325403bb1b5bc" target="_blank">1</a>, <a href="https://flat.io/score/649af3ef86c84b8c86396a6d-ru-hai?sharingKey=d183d7ba07ad030817bc1dae4489747cde169a0039d7615904cd0d34f3ac9c97ef3eb4132e6231eb4f8567fabc9452ed50a3002bf0610cc47a285eca991ce8f0" target="_blank">2</a>, <a href="https://flat.io/score/64a8dc11ec73743893f57a3b-attitude-by-mrs-green-apple?sharingKey=94668e0c41811690f3acb0194b60d4e76d56e812945cb5dd6454fdd08624c8ab4ad72c6f4133f7d234e3077511a50beb284ff42c5ecdee6df4a1914c710a6579" target="_blank">3</a>, <a href="https://flat.io/score/64aa7cc627b7728cb20c47d3-unlucky-by-iu?sharingKey=ab74e859b755d6a990e862d84646d9ebe4ed69f898e4c55e420c5d9d1797cd324337fc9960440eeb07bc4c9b28d556556cf9c043ee30ab2cff19a1f03d48d4c2" target="_blank">4</a>, <a href="https://flat.io/score/6913afa11b82e1c3b9f9944d-gei-bao-zhao-he-zi-de-gu-niang?sharingKey=fe454bee6521fdd873eb9433af1a98e358795f83427662e7debbaef786146819c710c5666a2053e465ac12a567e588b311d08ff1741a41ea4b2b47f15e94663b" target="_blank">5</a>]
 				<br><br> 
 				
-				We performed this one at <a href="https://youtu.be/b2MyCJyoJS4?feature=shared&t=3410" target="_blank">Jeremy's senior recital</a> 
+				Jeremy, <a href="https://bkv2chu.github.io/" target="_blank">Victor</a>, and I performed this one at <a href="https://youtu.be/b2MyCJyoJS4?feature=shared&t=3410" target="_blank">Jeremy's senior recital</a> 
 				<br><br> 
 		
 				I enjoyed spending time on creative projects in my college classes like <a href="https://www.youtube.com/watch?v=kOq1nCt4PU0" target="_blank">this</a> and <a href="https://www.youtube.com/watch?v=eO3uvkmKKnI" target="_blank" >this</a> 
 				<br><br>
 	
 				A pic of the <a href="fireflies.JPEG" target="_blank">back of my head</a> (in the bottom left) when I was in ppe 
-				<br><br> 
+				<br><br>
+				
+				Me and <a href="https://piyawatm.github.io/" target="_blank">Ken</a> jamming [<a href="https://youtu.be/llaU9R2n_tc" target="_blank">1</a>, <a href="https://youtu.be/0mbXlV3sMqA" target="_blank">2</a>, <a href="https://youtu.be/NjoVpHREZ64" target="_blank">3</a>]
 
-				<!--<a href="" target="_blank">Pulling</a> and <a href="zt-pb.png" target="_blank">zetamac-ing</a> >my bodyweight 
-				<br><br>-->
+				<br><br>
 				
 				<br>
                 </p>
@@ -425,5 +446,6 @@
             });
         });
     </script>
+
 </body>
 </html>
